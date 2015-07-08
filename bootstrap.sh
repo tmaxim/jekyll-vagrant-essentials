@@ -70,8 +70,8 @@ fi
 # npm
 #
 # Make sure we have the latest npm version and the update checker module
-npm install -g npm
-npm install -g npm-check-updates
+# npm install -g npm
+# npm install -g npm-check-updates
 
 # Gulp
 # npm install -g gulp
