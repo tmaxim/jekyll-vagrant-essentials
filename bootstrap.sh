@@ -57,7 +57,9 @@ else
   sudo add-apt-repository -y ppa:git-core/ppa
 
   # Needed for nodejs.
-  wget -q -O - https://deb.nodesource.com/setup | sudo bash -
+  # wget -q -O - https://deb.nodesource.com/setup | sudo bash -
+  # wget -q -O - https://npmjs.org/install.sh | sudo sh
+  wget -q -O - https://deb.nodesource.com/setup_0.12 | sudo bash -
 
   sudo apt-get update --assume-yes > /dev/null
 

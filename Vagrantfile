@@ -1,3 +1,6 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
 Vagrant.configure("2") do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
@@ -12,7 +15,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.3.33"
 
   # Create a shared folder between guest and host
-  config.vm.synced_folder "www/", "/srv/www", create: true
+  config.vm.synced_folder "www/", "/srv/www", create: true, group: "vagrant", owner: "vagrant"
 
   config.ssh.forward_agent = true
 
